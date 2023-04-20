@@ -1,7 +1,10 @@
 class Math_Calculator:
 
     def linear_equation(self,a,b):
-        x = - b/a
-        return x
+        try:
+            x = - b/a
+            return x
+        except(ZeroDivisionError):
+            raise ZeroDivisionError('Уравнение не имеет корней')
 
 
