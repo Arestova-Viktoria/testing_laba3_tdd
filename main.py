@@ -55,9 +55,7 @@ class Math_Calculator:
         return res
 
     def integrate_quadratic_v(self,a,b,c,x0,x1):
-        pass
-
-
-
-
+        func = lambda x: a * (x ** 2) + b * x + c
+        res, err = integrate.quad(func, x0, x1)
+        return res
 
