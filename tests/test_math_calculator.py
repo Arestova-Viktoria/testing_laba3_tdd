@@ -22,6 +22,34 @@ class MathCalculatorTest(unittest.TestCase):
             solution = mc.linear_equation(a, b)
         self.assertEqual('Уравнение не имеет корней',e.exception.args[0])
 
+    def test_quadratic_equation_positiveD(self):
+        mc = Math_Calculator()
+        a = 1
+        b = -3
+        c = -4
+        solution = mc.quadratic_equation(a, b, c)
+        result = [4, -1]
+        self.assertEqual(solution, result)
+
+    def test_quadratic_equation_nullD(self):
+        mc = Math_Calculator()
+        a = 1
+        b = -2
+        c = 1
+        solution = mc.quadratic_equation(a, b, c)
+        result = [1]
+        self.assertEqual(solution, result)
+
+    def test_quadratic_equation_negativeD(self):
+        mc = Math_Calculator()
+        a = 1
+        b = -3
+        c = -4
+        solution = mc.quadratic_equation(a, b, c)
+        result = ['Нет корней!']
+        self.assertEqual(solution, result)
+
+
 
 if __name__ == '__main__':
     unittest.main()

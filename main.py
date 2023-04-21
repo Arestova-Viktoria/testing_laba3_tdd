@@ -7,4 +7,8 @@ class Math_Calculator:
         except(ZeroDivisionError):
             raise ZeroDivisionError('Уравнение не имеет корней')
 
+    def quadratic_equation(self, a, b, c):
+        pass
+
+
 
