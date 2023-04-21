@@ -34,7 +34,15 @@ class Math_Calculator:
         return resultMatrix
 
     def mult_matrix(self,matrix1,matrix2):
-        pass
+        n = len(matrix1)
+        result_matrix = [[0 for i in range(n)] for i in range(n)]
+        for i in range(n):
+            for j in range(n):
+                for k in range(n):
+                    result_matrix[i][j] += matrix1[i][k] * matrix2[k][j]
+        return result_matrix
+
+
 
 
 
