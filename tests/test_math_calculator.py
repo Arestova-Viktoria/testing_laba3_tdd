@@ -97,6 +97,17 @@ class MathCalculatorTest(unittest.TestCase):
         result = 14.0
         self.assertEqual(solution, result)
 
+    def test_integrate_quadratic_v(self):
+        mc = Math_Calculator()
+        a = 3
+        b = -3
+        c = 1
+        x0 = 0
+        x1 = 1
+        solution = mc.integrate_quadratic_v(a,b,c,x0,x1)
+        result = 0.5
+        self.assertEqual(solution, result)
+
 
 
 
