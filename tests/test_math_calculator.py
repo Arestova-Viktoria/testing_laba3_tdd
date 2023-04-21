@@ -63,6 +63,20 @@ class MathCalculatorTest(unittest.TestCase):
                   [18, 15, 21]]
         self.assertEqual(difference, result)
 
+    def test_mult_matrix(self):
+        mc = Math_Calculator()
+        matrix1 = [[2, 3, 4],
+                  [10, 11, 12],
+                  [15, 16, 17]]
+        matrix2 = [[5, 6, 7],
+                  [13, 14, 15],
+                  [18, 19, 20]]
+        difference = mc.mult_matrix(matrix1,matrix2)
+        result = [[121, 130, 139],
+                  [409, 442, 475],
+                  [589, 637, 685]]
+        self.assertEqual(difference, result)
+
 
 
 if __name__ == '__main__':

@@ -33,6 +33,8 @@ class Math_Calculator:
                 resultMatrix[i][j] = matrix1[i][j] + matrix2[i][j]
         return resultMatrix
 
+    def mult_matrix(self,matrix1,matrix2):
+        pass
 
 
 
