@@ -87,6 +87,15 @@ class MathCalculatorTest(unittest.TestCase):
                   [4, 12]]
         self.assertEqual(solution, result)
 
+    def test_integrate_linear_v(self):
+        mc = Math_Calculator()
+        a = 2
+        b = 11
+        solution = mc.integrate_linear_v(a,b)
+        result = 14.0
+        self.assertEqual(solution, result)
+
+
 
 
 if __name__ == '__main__':
