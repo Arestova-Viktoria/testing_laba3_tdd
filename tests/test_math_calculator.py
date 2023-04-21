@@ -49,6 +49,20 @@ class MathCalculatorTest(unittest.TestCase):
         result = ['Нет корней!']
         self.assertEqual(solution, result)
 
+    def test_sum_matrix(self):
+        mc = Math_Calculator()
+        matrix1 = [[10, 2, 5],
+                  [3, 4, 6],
+                  [11, 7, 12]]
+        matrix2 = [[1, 2, 3],
+                  [4, 5, 6],
+                  [7, 8, 9]]
+        difference = mc.sum_matrix(matrix1,matrix2)
+        result = [[11, 4, 8],
+                  [7, 9, 12],
+                  [18, 15, 21]]
+        self.assertEqual(difference, result)
+
 
 
 if __name__ == '__main__':

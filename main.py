@@ -25,6 +25,8 @@ class Math_Calculator:
             res.append('Нет корней!')
         return res
 
+    def sum_matrix(self):
+        pass
 
 
 
