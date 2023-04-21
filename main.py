@@ -42,7 +42,8 @@ class Math_Calculator:
                     result_matrix[i][j] += matrix1[i][k] * matrix2[k][j]
         return result_matrix
 
-
+    def transp_matrix(self,matrix):
+        pass
 
 
 

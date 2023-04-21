@@ -57,11 +57,11 @@ class MathCalculatorTest(unittest.TestCase):
         matrix2 = [[1, 2, 3],
                   [4, 5, 6],
                   [7, 8, 9]]
-        difference = mc.sum_matrix(matrix1,matrix2)
+        solution = mc.sum_matrix(matrix1,matrix2)
         result = [[11, 4, 8],
                   [7, 9, 12],
                   [18, 15, 21]]
-        self.assertEqual(difference, result)
+        self.assertEqual(solution, result)
 
     def test_mult_matrix(self):
         mc = Math_Calculator()
@@ -71,11 +71,21 @@ class MathCalculatorTest(unittest.TestCase):
         matrix2 = [[5, 6, 7],
                   [13, 14, 15],
                   [18, 19, 20]]
-        difference = mc.mult_matrix(matrix1,matrix2)
+        solution = mc.mult_matrix(matrix1,matrix2)
         result = [[121, 130, 139],
                   [409, 442, 475],
                   [589, 637, 685]]
-        self.assertEqual(difference, result)
+        self.assertEqual(solution, result)
+
+    def test_transp_matrix(self):
+        mc = Math_Calculator()
+        matrix = [[25, 30, 4],
+                  [7, 11, 12]]
+        solution = mc.transp_matrix(matrix)
+        result = [[25, 7],
+                  [30, 11],
+                  [4, 12]]
+        self.assertEqual(solution, result)
 
 
 
