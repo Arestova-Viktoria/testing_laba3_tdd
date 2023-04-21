@@ -1,4 +1,5 @@
 from math import sqrt
+from scipy import integrate
 
 
 class Math_Calculator:
@@ -48,8 +49,11 @@ class Math_Calculator:
         t_matrix = [[matrix[j][i] for j in range(n)]for i in range(m)]
         return t_matrix
 
-    def integrate_linear_v(self,a,b):
-        pass
+    def integrate_linear_v(self,a,b,x0,x1):
+        func = lambda x: a * x + b
+        res, err = integrate.quad(func, x0, x1)
+        return res
+
 
 
 
