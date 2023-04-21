@@ -43,7 +43,10 @@ class Math_Calculator:
         return result_matrix
 
     def transp_matrix(self,matrix):
-        pass
+        n = len(matrix)
+        m = len(matrix[0])
+        t_matrix = [[matrix[j][i] for j in range(n)]for i in range(m)]
+        return t_matrix
 
 
 
