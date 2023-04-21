@@ -42,9 +42,9 @@ class MathCalculatorTest(unittest.TestCase):
 
     def test_quadratic_equation_negativeD(self):
         mc = Math_Calculator()
-        a = 1
-        b = -3
-        c = -4
+        a = 2
+        b = - 6
+        c = 11
         solution = mc.quadratic_equation(a, b, c)
         result = ['Нет корней!']
         self.assertEqual(solution, result)
