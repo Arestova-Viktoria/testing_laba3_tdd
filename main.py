@@ -25,8 +25,13 @@ class Math_Calculator:
             res.append('Нет корней!')
         return res
 
-    def sum_matrix(self):
-        pass
+    def sum_matrix(self,matrix1,matrix2):
+        n = len(matrix1)
+        resultMatrix = [[0] * n for i in range(n)]
+        for i in range(n):
+            for j in range(n):
+                resultMatrix[i][j] = matrix1[i][j] + matrix2[i][j]
+        return resultMatrix
 
 
 
